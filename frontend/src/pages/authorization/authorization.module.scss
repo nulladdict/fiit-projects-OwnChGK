@@ -1,0 +1,67 @@
+.contentWrapper {
+  height: 100%;
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo {
+  width: 48%;
+  height: 14%;
+  margin: 18vh 0 8vh;
+  transform: translateX(50%);
+  user-select: none;
+}
+
+.toRegistrationParagraph {
+  color: #E5E5E5;
+  display: inline-block;
+}
+
+.toRegistrationLink {
+  text-decoration: none;
+  color: var(--foreground-color);
+  font-weight: 700;
+}
+
+.toRegistrationWrapper {
+  width: 100%;
+  font-size: 1vmax;
+  text-align: center;
+  margin-top: 10vh;
+  user-select: none;
+}
+
+.restorePasswordLink {
+  color: var(--foreground-color);
+  text-decoration: none;
+  user-select: none;
+}
+
+.restoreLinkWrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 1vmax;
+}
+
+@media only screen and (max-width: 600px) {
+  .contentWrapper {
+    width: 80%;
+  }
+
+  .logo {
+    width: 48%;
+    height: 14%;
+  }
+
+  .restoreLinkWrapper {
+    font-size: 3.7vw;
+  }
+
+  .toRegistrationWrapper {
+    position: absolute;
+    bottom: 5vh;
+    font-size: 3.9vw;
+  }
+}
